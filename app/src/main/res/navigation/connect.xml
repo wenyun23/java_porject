@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/connect"
+    app:startDestination="@id/photo_Fragment">
+
+    <fragment
+        android:id="@+id/photo_Fragment"
+        android:name="com.example.online_photo.Photo_Fragment"
+        android:label="图库"
+        tools:layout="@layout/fragment_photo_">
+        <action
+            android:id="@+id/action_photo_Fragment_to_look_Fragment"
+            app:destination="@id/look_Fragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/look_Fragment"
+        android:name="com.example.online_photo.Look_Fragment"
+        android:label="浏览"
+        tools:layout="@layout/fragment_look_" />
+</navigation>
